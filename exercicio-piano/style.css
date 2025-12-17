@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 body {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #E3F2FD;
+  background: #e3f2fd;
 }
 .wrapper {
   padding: 35px 40px;
@@ -19,7 +19,7 @@ body {
 }
 .wrapper header {
   display: flex;
-  color: #B2B2B2;
+  color: #b2b2b2;
   align-items: center;
   justify-content: space-between;
 }
@@ -48,7 +48,7 @@ header input {
   cursor: pointer;
   appearance: none;
   position: relative;
-  background: #4B4B4B
+  background: #4b4b4b;
 }
 .keys-checkbox input::before {
   content: "";
@@ -86,8 +86,8 @@ header input {
   background: linear-gradient(#333, #000);
 }
 .piano-keys .black.active {
-  box-shadow: inset -5px -10px 10px rgba(255,255,255,0.1);
-  background:linear-gradient(to bottom, #000, #434343);
+  box-shadow: inset -5px -10px 10px rgba(255, 255, 255, 0.1);
+  background: linear-gradient(to bottom, #000, #434343);
 }
 .piano-keys .white {
   height: 230px;
@@ -97,14 +97,15 @@ header input {
   background: linear-gradient(#fff 96%, #eee 4%);
 }
 .piano-keys .white.active {
-  box-shadow: inset -5px 5px 20px rgba(0,0,0,0.2);
-  background:linear-gradient(to bottom, #fff 0%, #eee 100%);
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
 }
 .piano-keys .key span {
   position: absolute;
   bottom: 20px;
+  left: 10px;
   width: 100%;
-  color: #A2A2A2;
+  color: #a2a2a2;
   font-size: 1.13rem;
   text-align: center;
 }
@@ -115,6 +116,13 @@ header input {
   bottom: 13px;
   color: #888888;
 }
+
+audio {
+  width: 15vh;
+  background-color: beige;
+  margin: 1vh 0;
+}
+
 @media screen and (max-width: 815px) {
   .wrapper {
     padding: 25px;
